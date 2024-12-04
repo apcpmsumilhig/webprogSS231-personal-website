@@ -1,10 +1,12 @@
 .main-container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: DodgerBlue;
-  }
-   
-  
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightblue;
+  font-family: "Comfortaa", sans-serif;
+  flex-direction: column;
+  opacity: 0.9;
+}
+ 
 .main-container > .sub-container {
   background-color: #f1f1f1;
   min-width: 250px;
@@ -14,11 +16,12 @@
   font-family: "Comfortaa", sans-serif;
   flex-direction: row;
   padding:20px;
+  
 }
 
 
 h1 {
-  font-family: "Comfortaa", sans-serif;
+font-family: "Comfortaa", sans-serif;
 }
 
 body {
