@@ -18,14 +18,34 @@
   border-radius: 20px;
 }
 
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Comfortaa", sans-serif;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  background-color: yellow;
+}
+
+.holder > .image {
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+}
+
 
 h1 {
 font-family: "Comfortaa", sans-serif;
 text-align: center;
 }
 
+
 body {
   background-attachment: fixed;
+  font-family: "Comfortaa", sans-serif;
 }
 
 img {
