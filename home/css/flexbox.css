@@ -25,6 +25,7 @@
   flex-direction: row;
   text-align: center;
   justify-content: center;
+  background-color: #f1f1f1;
 }
 
 .holder > .image {
@@ -32,6 +33,7 @@
     font-size: 20px;
     text-align: center;
     padding: 20px;
+    background-color: #f1f1f1;
 }
 
 
@@ -48,7 +50,7 @@ body {
 
 img {
   height: 520px;
-  width: 450px;
+  width: 400px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding :20px;
 }
