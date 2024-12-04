@@ -25,7 +25,6 @@
   flex-direction: row;
   text-align: center;
   justify-content: center;
-  background-color: yellow;
 }
 
 .holder > .image {
@@ -33,7 +32,6 @@
     font-size: 20px;
     text-align: center;
     padding: 20px;
-    background-color: black;
 }
 
 
