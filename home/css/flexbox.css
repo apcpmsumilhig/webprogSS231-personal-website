@@ -1,12 +1,11 @@
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: lightblue;
-  font-family: "Comfortaa", sans-serif;
-  flex-direction: column;
-}
-
-.sub-container {
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+  }
+   
+  
+.main-container > .sub-container {
   background-color: #f1f1f1;
   min-width: 250px;
   margin: 20px;
