@@ -27,7 +27,8 @@ text-align: center;
 body {
   background-attachment: fixed;
 }
-.image1, .image2 {
+
+#image1, #image2 {
   height: 720px;
   width: 650px;
 }
