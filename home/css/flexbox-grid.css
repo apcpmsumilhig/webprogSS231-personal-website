@@ -15,7 +15,7 @@ main {
 }
 
 .main-content {
-  flex: 5;
+  flex: 2;
   background-color: #fff;
   padding: 20px;
   display: flex;
