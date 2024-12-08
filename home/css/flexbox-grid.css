@@ -3,6 +3,9 @@
   grid-template-rows: auto 1fr auto;
   height: 100vh;
 }
+body{
+  font-family: "Comfortaa", sans-serif;
+}
 
 header, footer {
   background-color: #f0f0f0;
