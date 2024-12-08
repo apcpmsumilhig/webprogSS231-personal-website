@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 20fr auto;
     height: 100vh;
   }
   
@@ -29,6 +29,11 @@
         line-height: 35px;
         font-size: 30px;
       }
+
+  img {
+    height: 300px; 
+    width: 250px;
+  }
 
 
 
