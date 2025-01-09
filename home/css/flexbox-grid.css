@@ -7,11 +7,12 @@ body{
   background-repeat: no-repeat;
   font-family: "Comfortaa", sans-serif;
   background-size: 1920px 1080px;
+  background-color: rgba(240, 240, 240, 0.33);
  
 }
 
 header, footer {
-  background-color: rgba(240, 240, 240, 0.33);
+
   padding: 20px;
 }
 
@@ -23,7 +24,7 @@ main {
 
 .main-content {
   flex: 2;
-  background-color: rgba(240, 240, 240, 0.33);
+
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -33,7 +34,7 @@ main {
   
 
   .main-content > div {
-      background-color: rgba(240, 240, 240, 0.33);
+      
       width: 300px;
       margin: 10px;
       text-align: center;
