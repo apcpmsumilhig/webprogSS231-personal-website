@@ -7,11 +7,9 @@ body{
   font-family: "Comfortaa", sans-serif;
   background-size: auto;
   background-repeat: no-repeat;
-  
- 
-}
+  }
 
-header, footer {
+header{
   background-color: rgba(240, 240, 240, 0.42);
   padding: 20px;
 }
@@ -29,10 +27,6 @@ main {
   display: flex;
   flex-wrap: wrap;
 
-
-
-  
-
   .main-content > div {
       
       width: 300px;
@@ -42,16 +36,22 @@ main {
       font-size: 18px;
   }}
 
-
 button {
   padding:10px;
 }
 
-
-
 .sidebar {
   flex: 1;
   padding: 20px;
+}
+
+footer {
+  background-color: black;
+
+}
+
+h2 {
+  color :white;
 }
 
 img{
