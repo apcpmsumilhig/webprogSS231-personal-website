@@ -37,7 +37,7 @@ main {
   }}
 
 button {
-  margin: 10px;
+  margin: 5px;
 }
 
 .sidebar {
@@ -53,6 +53,7 @@ footer {
 
 h2 {
   color :white;
+  margin: 2px;
 }
 
 img{
