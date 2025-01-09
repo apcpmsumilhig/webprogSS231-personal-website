@@ -5,10 +5,11 @@
 }
 body{
   font-family: "Comfortaa", sans-serif;
+  background-image: ;
 }
 
 header, footer {
-  background-color: #f0f0f0;
+
   padding: 20px;
 }
 
@@ -19,7 +20,7 @@ main {
 
 .main-content {
   flex: 2;
-  background-color: #fff;
+
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -29,7 +30,7 @@ main {
   
 
   .main-content > div {
-      background-color: #f1f1f1;
+
       width: 300px;
       margin: 10px;
       text-align: center;
@@ -44,7 +45,7 @@ main {
 
 .sidebar {
   flex: 1;
-  background-color: #f5f5f5;
+
   padding: 20px;
 }
 
