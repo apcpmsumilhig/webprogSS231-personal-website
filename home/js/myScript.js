@@ -1,4 +1,4 @@
-function myGit) {
+function myGit() {
     document.getElementById("demo").innerHTML="Paragraph changed.";
 }
 
