@@ -29,14 +29,6 @@
       background-color: rgba(231, 176, 65, 0.685);
   }
   
-  .impClass {
-      background-color: rgb(255, 202, 202);
-  }
-  
-  .comment-item {
-      text-decoration: line-through;
-      background-color: rgb(230, 230, 230);
-  }
 
   .comments {
     text-align: center;
