@@ -196,3 +196,8 @@ a:active {
 
   .content-text {
     width: 90%; }}
+
+    .appcontent img {
+      width: 100px;
+      height: auto; 
+  }

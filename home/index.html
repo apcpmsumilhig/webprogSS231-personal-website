@@ -133,12 +133,12 @@
   
     <div id="app">
       <div class="appcontent">
-        <figure v-for="x in manyFoods">
-          <img v-bind:src="x.url">
-          <figcaption>{{ x.name }}</figcaption>
-        </figure>
+          <figure v-for="x in manyPics" :key="x.name">
+              <img v-bind:src="x.url" alt="Food Image">
+              <figcaption>{{ x.name }}</figcaption>
+          </figure>
       </div>
-      </div>
+  </div>
 
     <div class="comments">
       <div id="app3">
