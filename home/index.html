@@ -5,7 +5,7 @@
     <title>local ver </title>
     
 </head>
-<body background = "css/assetsyujin_again.jpg">
+<body background = "css/assets/yujin_again.jpg">
 
 <!-- Header Tab -->
   <header class = "header">
@@ -155,8 +155,8 @@
          
           <div>
         <p><strong>Shopping list:</strong></p>
-        <ul id="ulToFind">
-        <li 
+        <ul id="ulToFind" class="ul">
+        <li class="li"
                 v-for="item in shoppingList" 
                 v-bind:class="{ impClass: item.important }"
                 v-on:click="item.found=!item.found"

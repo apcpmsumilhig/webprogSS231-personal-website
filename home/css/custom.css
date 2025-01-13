@@ -219,10 +219,10 @@ a:active {
   cursor: pointer;
   background-color: lightgray;
 }
-ul {
+.ul {
   list-style-type: none;
 }
-li {
+.li {
   margin: 2px;
   background-color: rgb(211, 254, 211);
 }
