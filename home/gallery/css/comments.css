@@ -1,0 +1,74 @@
+#app3 {
+    border: dashed black 1px;
+    display: inline-block;
+    padding: 0 20px;
+    width: 100%; /* Make it full width on smaller screens */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  .comment {
+    align-items: center;
+  }
+  
+  #app3 label, #app3 .comment-item {
+    padding: 5px;
+    border-radius: 5px;
+    display: block; /* Ensure each label and comment item takes full width */
+  }
+  
+  #app3 label:hover, #app3 .comment-item:hover {
+    cursor: pointer;
+    background-color: lightgray;
+  }
+  
+  .comment-list {
+    list-style-type: none;
+    padding: 0; /* Remove default padding */
+    text-align: left;
+  }
+  
+  .comment-item {
+    margin: 2px;
+    background-color: rgba(231, 176, 65, 0.685);
+    text-decoration: none; /* Ensure no strikethrough */
+    color: black; /* Set text color to black for visibility */
+  }
+  
+  .comments {
+    text-align: center;
+    align-items: center;
+    margin: 50px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    #app3 {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .comments {
+        margin: 20px; /* Reduce margin for smaller screens */
+    }
+  
+    .comment-item {
+        margin: 5px 0; /* Add vertical spacing between comment items */
+    }
+  
+    #app3 label, #app3 .comment-item {
+        padding: 10px; /* Increase padding for better touch targets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #app3 {
+        padding: 5px; /* Further reduce padding for very small screens */
+    }
+  
+    .comments {
+        margin: 10px; /* Further reduce margin for very small screens */
+    }
+  
+    .comment-item {
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+  }
