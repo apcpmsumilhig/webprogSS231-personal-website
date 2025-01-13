@@ -132,13 +132,12 @@
     </main>
   
     <div id="app">
-      <div class="appcontent">
-          <figure v-for="x in manyFoods" :key="x.name">
-              <img v-bind:src="x.url" alt="Picture Gallery">
-              <figcaption>{{ x.name }}</figcaption>
-          </figure>
+      <div>
+        <figure v-for="x in manyFoods">
+          <img v-bind:src="x.url">
+          <figcaption>{{ x.name }}</figcaption>
+        </figure>
       </div>
-  </div>
 
     <div class="comments">
       <div id="app3">
@@ -172,8 +171,8 @@
   <!-- Footer -->
   <footer> <h4>Asia Pacific College WEBPROG SS231 
     <br><br>
-    Developed by Paul Brian Sumilhig</h4>
-    Inspiration:  <a href="jpcs.apc.education">jpcs.apc.education</a>
+    Developed by Paul Brian Sumilhig
+    Inspiration:  <a href="jpcs.apc.education">jpcs.apc.education</a></h4>
   </footer>
 </div>
 
