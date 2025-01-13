@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="css/custom.css"> 
     <link rel="stylesheet" href="css/comments.css"> 
+    <link rel="stylesheet" href="css/app.css"> 
     <title>Personal Profile Webpage</title>
     
 </head>
@@ -15,9 +16,9 @@
         <h1>Personal Profile Web page </h1>
       </div>
       <div class = "header-tabs">
-        <div class= "tab"><h3> <a href = "https://apcpmsumilhig.github.io/webprogSS231-personal-website/home/">About Me </a></h3></div>
-        <div class= "tab"><h3> <a href = "gallery">Picture Gallery</a></h3></div>
-        <div class= "tab"><h3><a href = "socials">Contact Me!</a></h3></div>
+        <div class= "tab"><h3> <a href = "">About Me </a></h3></div>
+        <div class= "tab"><h3> <a href = "">Picture Gallery</a></h3></div>
+        <div class= "tab"><h3><a href = "">Contact Me!</a></h3></div>
   
       </div>
         
@@ -46,7 +47,7 @@
               <a href = "https://github.com/apcpmsumilhig" target="_blank" > GitHub </a> 
             </div>
             <div class = "socials-tab">
-              <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">  Facebook  </a> 
+              <a href = "https://www.facebook.com/normally.pol" target="_blank">  Facebook  </a> 
             </div>
           </div>
         </div>
@@ -130,6 +131,14 @@
         </section>
       
     </main>
+  
+    <div id="app">
+      <div>
+        <figure v-for="x in manyFoods">
+          <img v-bind:src="x.url">
+          <figcaption>{{ x.name }}</figcaption>
+        </figure>
+      </div>
 
     <div class="comments">
       <div id="app3">
@@ -164,12 +173,14 @@
   <footer> <h4>Asia Pacific College WEBPROG SS231 
     <br><br>
     Developed by Paul Brian Sumilhig</h4>
+    <p>Inspiration <a href="jpcs.apc.education"> jpcs.apc.education </p>
   </footer>
 </div>
 
 
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="js/myScript.js"></script>
+<script src="js/app.js"></script>
 </body>
 
 </html>
