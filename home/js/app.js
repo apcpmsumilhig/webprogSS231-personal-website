@@ -1,7 +1,7 @@
 const app = Vue.createApp({
     data() {
         return {
-            manyPics: [
+            manyFoods: [
                 {name: 'Friends', url: 'gallery/css/assets/1.JPG'},
                 {name: 'Cover', url: 'gallery/css/assets/5.jpg'},
                 {name: 'Sun', url: 'gallery/css/assets/7.jpg'},
