@@ -16,7 +16,7 @@
       </div>
       <div class = "header-tabs">
         <div class= "tab"><h3> <a href = "C:\Users\BRIAN\Downloads\webprog midterm\aboutme.html">About Me </a></h3></div>
-        <div class= "tab"><h3> <a href = "C:\Users\BRIAN\Downloads\WEBPROG\wae.html">Picture Gallery</a></h3></div>
+        <div class= "tab"><h3> <a href = "gallery/index.html">Picture Gallery</a></h3></div>
         <div class= "tab"><h3>Contact Me!</h3></div>
   
       </div>
@@ -131,29 +131,30 @@
       
     </main>
 
-    <div class = "comments">
+    <div class="comments">
       <div id="app3">
-        <form v-on:submit.prevent="sendComment">
-            <p>
-                What would you like to say?<br>
-                <input type="text" required placeholder="Type it here" v-model="commentText">
-            </p>
-            <button type="submit">Send Comment</button>
-        </form>
-        <br>
-    
-        <div>
-            <ul class="comment-list">
-                <li class="comment-item"
-                    v-for="comment in commentPlace" 
-                    v-bind:key="comment.name" 
-                    v-show="!comment.found">
-                    {{ comment.name }} <!-- Use comment.name to display the comment text -->
-                </li>
-            </ul>
-        </div>
-    </div>
+          <form v-on:submit.prevent="sendComment">
+              <p>
+                  What would you like to say?<br>
+                  <input type="text" required placeholder="Type it here" v-model="commentText">
+              </p>
+              <button type="submit">Send Comment</button>
+          </form>
+          <br>
+  
+          <div class="comment-list">
+              <ul class="comment-list">
+                  <li class="comment-item"
+                      v-for="comment in commentPlace" 
+                      v-bind:key="comment.name" 
+                      v-show="!comment.found">
+                      {{ comment.name }}
+                  </li>
+              </ul>
+          </div>
       </div>
+  </div>
+    
     
   
 
