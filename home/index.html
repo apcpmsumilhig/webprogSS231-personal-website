@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/custom.css"> 
+    <link rel="stylesheet" href="css/comments.css"> 
     <title>local ver </title>
     
 </head>
@@ -164,8 +165,8 @@
                   {{ item.name }}, {{ item.number}}
         </li>
         </ul>
-        <ul id="ulFound">
-        <li 
+        <ul id="ulFound" class = "ul">
+        <li class = "li"
                 v-for="item in shoppingList" 
                 v-bind:class="{ impClass: item.important }"
                 v-on:click="item.found=!item.found"
@@ -189,7 +190,7 @@
 
 
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script src="js.myScript.js"></script>
+<script src="js/myScript.js"></script>
 </body>
 
 </html>
