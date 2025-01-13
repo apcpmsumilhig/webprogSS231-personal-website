@@ -3,7 +3,7 @@ const app = Vue.createApp({
      return {
        manyFoods: [
          {name: 'Friends', url: 'gallery/css/assets/1.JPG'},
-         {name: 'Cover', url: 'gallery/css/assets/5.jpg.svg'},
+         {name: 'Cover', url: 'gallery/css/assets/5.jpg'},
          {name: 'Sun', url: 'gallery/css/assets/7.jpg'},
          {name: 'Plant', url: 'gallery/css/assets/8.jpg'},
          {name: 'Me', url: 'gallery/css/assets/9.jpg'},
