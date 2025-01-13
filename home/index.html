@@ -133,49 +133,26 @@
 
     <div class = "comments">
       <div id="app3">
-        <form v-on:submit.prevent="addItem">
-        <p>
-              What do you need? <br>
-        <input type="text" required placeholder="item name.." v-model="itemName">
-        </p>
-        <p>
-              How many? <br>
-        <input type="number" placeholder="number of items.." v-model="itemNumber">
-        </p>
-        <p>
-              Important?
-        <label>
-        <input type="checkbox" v-model="itemImportant">
-                {{ itemImportant }}
-        </label>
-        </p>
-        <button type="submit">Add item</button>
+        <form v-on:submit.prevent="sendComment">
+            <p>
+                What would you like to say?<br>
+                <input type="text" required placeholder="Type it here" v-model="commentText">
+            </p>
+            <button type="submit">Send Comment</button>
         </form>
         <br>
-        <hr>
-         
-          <div>
-        <p><strong>Shopping list:</strong></p>
-        <ul id="ulToFind" class="ul">
-        <li class="li"
-                v-for="item in shoppingList" 
-                v-bind:class="{ impClass: item.important }"
-                v-on:click="item.found=!item.found"
-                v-show="!item.found">
-                  {{ item.name }}, {{ item.number}}
-        </li>
-        </ul>
-        <ul id="ulFound" class = "ul">
-        <li class = "li"
-                v-for="item in shoppingList" 
-                v-bind:class="{ impClass: item.important }"
-                v-on:click="item.found=!item.found"
-                v-show="item.found">
-                  {{ item.name }}, {{ item.number}}
-        </li>
-        </ul>
+    
+        <div>
+            <ul class="shopping-list">
+                <li class="shopping-item"
+                    v-for="comment in commentPlace" 
+                    v-bind:key="comment.name" 
+                    v-show="!comment.found">
+                    {{ comment.name }} <!-- Use comment.name to display the comment text -->
+                </li>
+            </ul>
         </div>
-        </div>
+    </div>
       </div>
     
   

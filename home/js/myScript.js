@@ -1,29 +1,19 @@
 const app3 = Vue.createApp({
     data() {
         return {
-            itemName: null,
-            itemNumber: null,
-            itemImportant: false,
-            shoppingList: [
-                { name: 'Tomatoes', number: 5, important: false, found: false },
-                { name: 'Bread', number: 1, important: false, found: false },
-                { name: 'Soap', number: 1, important: true, found: true }
-            ]
+            commentText: null,
+            commentPlace: []
         }
     },
     methods: {
-        addItem() {
-            if (this.itemName && this.itemNumber) { // Ensure itemName and itemNumber are not null
-                let item = {
-                    name: this.itemName,
-                    number: this.itemNumber,
-                    important: this.itemImportant,
+        sendComment() {
+            if (this.commentText) { // Ensure commentText is not null
+                let comment = {
+                    name: this.commentText,
                     found: false
                 }
-                this.shoppingList.push(item);
-                this.itemName = null;
-                this.itemNumber = null;
-                this.itemImportant = false;
+                this.commentPlace.push(comment);
+                this.commentText = null; // Clear the input field
             }
         }
     }
