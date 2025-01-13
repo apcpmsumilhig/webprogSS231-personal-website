@@ -2,13 +2,15 @@
   display: grid;
   width: auto;
   background: rgba(255, 255, 255);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 
     
   }
  /* Header */
   .header {
     min-width: 100%;
-    max-width: 100%;
     background: rgba(240, 240, 240);
     height: auto;
     padding-top: 2px;
@@ -44,7 +46,6 @@
 
 .profile{
   min-width: 100%;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -113,7 +114,8 @@
 /* Main Content */
 .main-content {
   min-width: 100%;
-  max-width: 100%;
+  align-items: center;
+  text-align: center;
 }
 
 .main-content-holder {
@@ -121,12 +123,8 @@
   margin-left: 500px;
   margin-top: 100px;
   margin-bottom:100px;
+
 }
-
-
-
-
-
 
   body > footer{
     margin-top:20px;
@@ -138,22 +136,41 @@
     padding-bottom: 20px;
 }
 
+.content-text {
+  text-align: justify;
+  width: 30%;
+  margin: 60px;
+}
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
- 
+.main-content-image {
+  width: 40%;
+}
+
+
+
+
+
 
 /* General Stuff */
 body{
   margin:0px auto;
-  max-width:1920px;
   height:auto;
-  background-image: url("assets/yujin_again.jpg");
   font-family: "Comfortaa", sans-serif;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 footer {
   background-color: #35438c;
   text-align: center;
+  min-width: 100%;
   
 }
 
@@ -185,4 +202,34 @@ a:hover {
 a:active {
   text-decoration: underline;
   color: #35438c;
+}
+
+/*JavaScript*/
+
+#app3 {
+  border: dashed black 1px;
+  display: inline-block;
+  padding: 0 20px;
+}
+#app3 label, #app li {
+  padding: 5px;
+  border-radius: 5px;
+}
+#app3 label:hover, #app li:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  margin: 2px;
+  background-color: rgb(211, 254, 211);
+}
+.impClass {
+  background-color: rgb(255, 202, 202);
+}
+#ulFound li {
+  text-decoration: line-through;
+  background-color: rgb(230,230,230);
 }
