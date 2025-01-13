@@ -125,8 +125,8 @@ margin: 5px;
 }
 
 img {
-    height: 90%;
-    width: 90%;
+    height: 50%;
+    width: auto;
     
 }
 
@@ -167,4 +167,21 @@ img {
   text-align: center;
   align-items: center;
   margin: 50px;
+}
+
+footer {
+  background-color: #35438c;
+  text-align: center;
+  min-width: 100%;
+  
+}
+
+body > footer{
+  margin-top:20px;
+  min-width:100%;
+  max-width:100%;
+  background:#35438c;
+  height:auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
