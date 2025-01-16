@@ -202,7 +202,3 @@ a:active {
       height: auto; 
   }
 
-.footerLink a:active, a:link, a:visited{
-  text-decoration: underline;
-  color: #ffffff;
-}
