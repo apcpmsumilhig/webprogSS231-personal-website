@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="css/custom.css"> 
-    <link rel="stylesheet" href="css/comments.css"> 
+    <link rel="stylesheet" href="css/background.css"> 
     <title>Personal Profile Webpage</title>
     
 </head>
@@ -15,8 +14,8 @@
         <h1>Personal Profile Web page </h1>
       </div>
       <div class = "header-tabs">
-        <div class= "tab"><h3> <a href = "">About Me </a></h3></div>
-        <div class= "tab"><h3> <a href = "gallery">Picture Gallery</a></h3></div>
+        <div class= "tab"><h3> <a href = "apcpmsumilhig/webprogSS231-personal-website/home/index.html">About Me </a></h3></div>
+        <div class= "tab"><h3> <a href = "apcpmsumilhig/webprogSS231-personal-website/home/gallery/index.html">Picture Gallery</a></h3></div>
         <div class= "tab"><h3><a href = "">Contact Me!</a></h3></div>
   
       </div>
@@ -29,25 +28,11 @@
     <section class = profile>
       <div class = "profile-holder">
         <div class = "profile-container">
-          <div class = "picture">
-            <img src = "css/assets/profile.jpeg" id = "profile-picture" >
-          </div>
           <div class = "intro">
-            <h3>Hi I'm Paul Brian Sumilhig!</h3>
+            <h3>Resources</h3>
           </div>
           <div class = "profile-description">
-            <h5>And you can find me here!</h5>
-          </div>
-          <div class = "socials-container">
-            <div class = "socials-tab">
-              <a href = "https://www.linkedin.com/in/paul-brian-sumilhig-531643320/" target="_blank">  LinkedIn  </a> 
-            </div>
-            <div class = "socials-tab">
-              <a href = "https://github.com/apcpmsumilhig" target="_blank" > GitHub </a> 
-            </div>
-            <div class = "socials-tab">
-              <a href = "https://www.facebook.com/normally.pol" target="_blank">  Facebook  </a> 
-            </div>
+            <h5>Here are the things I used to create my website</h5>
           </div>
         </div>
       </div>
@@ -64,24 +49,18 @@
 
           <div class="content-container">
                 <div class="content-text">
-                    <h3>About Me</h3>
+                    <h3>Research </h3>
                     <p>I am a 2nd Year student currently in office as an officer for two organizations. Also inclined with analytics, statistics, as well as data science and similar topics.</p>
                 </div>
 
-                    <img src="css/assets/aboutme.png" class="main-content-image" alt="About Me Image">
 
             </div>
             <div class="content-container">
-            <img class= "main-content-image" src= "css/assets/education.png" >
-        <div class="content-text"><h3>Education</h3>  
-        studied two different science high schools, one for Junior High School at <a href = "https://www.facebook.com/profile.php?id=100083844947925" target="_blank" title = "you can find my school here">Senator Renato Compañero Cayetano Memorial Science & Technology High School</a> and another one located at a different city for Senior High School at <a href="https://www.facebook.com/pcshs.edu" title = "you can find it here!">Pasig City Science High School</a> With Honors as a grade 12 student as well as a First Year College Student.<br>
-    <br>
-    <b>Achievements</b>
-    <ul>
-        <li>Was the Memberships head for Gaming Genesis</li>
-        <li>Currently the Logistics Head for APC Microsoft Community</li>
-        <li>Current President for Gaming Genesis</li>
-    </ul>
+        <div class="content-text"><h3>Picture Gallery</h3>  
+        For my Picture Gallery I researched two main sources. First,<a href = "https://vue3-carousel.ismail9k.com/?ref=madewithvuejs.com" target="_blank" title = "you can find it here">Vue3</a> where I tried to look for templates or ideas on how I should present my Picture Gallery by using a carousel 
+        <br>
+        Although for the final result I used the <a href="https://www.w3schools.com/howto/howto_js_slideshow.asp" title = "you can find it here!">w3schools</a> Slideshow to apply instead since it is easier and stuck with the basics a lot more.<br>
+    
 </div>
 </div>
 
@@ -90,8 +69,7 @@
         Currently studying as a Bachelor of Science in Computer Science specializing in Software Systems.
     </div> 
   
-    <img class = "main-content-image" src = "https://www.apc.edu.ph/wp-content/uploads/2021/09/MicrosoftTeams-image-2-1024x670.jpg" alt= "I Study here!">
-  </div>    
+ 
   <div class="content-container">
     <img class = "main-content-image" src="https://life360-website-cdn.life360.com/wp-content/uploads/sites/8/2024/03/AU-Homepage-Hero-image.png">
     <div class="content-text"><h3>IT Experience</h3>
@@ -116,10 +94,8 @@
         <li>Photography</li>
         <li>Travelling</li>
         </div>
-        <img class = "main-content-image" src="https://preview.redd.it/jgl8r3o4eog61.jpg?width=640&crop=smart&auto=webp&s=7740c69eaf34c8766b436bf40c3c6576a513832a">
+
       </div>
-      <div class = "content-container">
-        <img class = "main-content-image" src = "https://img.etimg.com/thumb/msid-105174440,width-650,height-488,imgsize-28384,resizemode-75/leodicaprio.jpg">
       
         <div class="content-text"><h3>Goals In Life / Dream</h3>
             to be so financially stable that I can spend on a day the average spending power of a person on a year.  
@@ -132,30 +108,7 @@
     </main>
 
 
-    <div class="comments">
-      <div id="app3">
-          <form v-on:submit.prevent="sendComment">
-              <p>
-                  What would you like to say?<br>
-                  <input type="text" required placeholder="Type it here" v-model="commentText">
-              </p>
-              <button type="submit">Send Comment</button>
-          </form>
-          <br>
-  
-          <div class="comment-list">
-              <ul class="comment-list">
-                  <li class="comment-item"
-                      v-for="comment in commentPlace" 
-                      v-bind:key="comment.name" 
-                      v-show="!comment.found">
-                      {{ comment.name }}
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </div>
-    
+   
     
     
   
