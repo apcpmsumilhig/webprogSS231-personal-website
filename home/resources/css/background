@@ -1,0 +1,208 @@
+.container {
+  display: grid;
+  width: auto;
+  background: rgba(255, 255, 255);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Header */
+.header {
+  min-width: 100%;
+  background: rgba(240, 240, 240);
+  height: auto;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(231, 175, 65, 1) 100%);
+  background-clip: content-box, padding-box;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.header-holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-text {
+  margin-left: 10px;
+}
+
+.header-tabs {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-tabs > .tab {
+  margin: 5px;
+}
+
+/* My Profile */
+.profile {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-container {
+  align-items: center;
+}
+
+.profile-holder {
+  background-color: rgba(255, 255, 255, 0.475);
+  align-items: center;
+}
+
+.picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-holder > .profile-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  align-items: center;
+}
+
+#profile-picture {
+  width: 150px;
+  height: 200px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.profile-description {
+  justify-content: center;
+  text-align: center;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials-tab {
+  border-right: 1px solid #35438c;
+  border-left: 1px solid #35438c;
+  padding: 5px;
+}
+
+.socials-container > .socials-tab {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Main Content */
+.main-content {
+  min-width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.main-content-holder {
+  margin: 100px auto;
+  max-width: 800px;
+}
+
+body > footer {
+  margin-top: 20px;
+  min-width: 100%;
+  max-width: 100%;
+  background: #35438c;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.content-text {
+  text-align: justify;
+  width: 30%;
+  margin: 60px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content-image {
+  width: 40%;
+}
+
+/* General Stuff */
+body {
+  margin: 0px auto;
+  height: auto;
+  font-family: "Comfortaa", sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+footer {
+  background-color: #35438c;
+  text-align: center;
+  min-width: 100%;
+}
+
+body > h1, h2, h3, h4, h5, h6 {
+  font-family: "Comfortaa", sans-serif;
+}
+
+h4 {
+  color: white;
+  margin: 2px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #35438c;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgba(231, 175, 65, 1);
+}
+
+a:active {
+  text-decoration: underline;
+  color: #35438c;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .header-holder {
+    flex-direction: column; /* Stack header elements vertically */
+  }
+
+  .header-tabs {
+    flex-direction: column; /* Stack tabs vertically */
+  }
+
+  .main-content-holder {
+    margin: 20px; /* Reduce margins for smaller screens */
+    width: 90%; /* Use more width on smaller screens */
+  }
+
+  .content-text {
+    width: 90%; }}
+
+    .appcontent img {
+      width: 100px;
+      height: auto; 
+  }
+
+.footerLink a:active, a:link, a:visited{
+  text-decoration: underline;
+  color: #ffffff;
+}
